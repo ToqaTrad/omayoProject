@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  	<listeners>
+		<listener class-name="com.omayoproject.utility.Listeners"></listener>
+	</listeners>
+  <test name="Test">
+	  <parameter name="userName" value="Toqa"></parameter>
+	   <parameter name="pass" value="1234"></parameter>
+	 <groups>
+		  <run>
+			 <include name="retest">
+			  </include>
+			  	 <include name="smoke">
+			  </include>
+		  </run>
+	  </groups>
+    <classes>
+      <class name="com.omayoproject.centerpagetest.HTMLFormTest"/>
+      <class name="com.omayoproject.leftpagetest.MultiSelectionBoxTest"/>
+      <class name="com.omayoproject.centerpagetest.TextAreaFieldTest"/>
+      <class name="com.omayoproject.centerpagetest.LoginTest"/>
+      <class name="com.omayoproject.centerpagetest.TableTest"/>
+      <class name="com.omayoproject.centerpagetest.TextAreaFieldTwoTest"/>
+      <class name="com.omayoproject.centerpagetest.Iframe1andIfram2Test"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
